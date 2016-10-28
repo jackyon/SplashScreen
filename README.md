@@ -1,5 +1,6 @@
 <h1>SplashScreen</h1>
 > Create splash screen for mobiles
+
 ![alt tag](http://i.imgur.com/77Dultq.gif)
 ![alt tag](http://i.imgur.com/7x3e6Hb.gif)
 
@@ -51,7 +52,7 @@ var opts = {
 
 - `splashImg` :
 there are three options:
-1. only show the full screen image.
+1) only show the full screen image.
 - full image size: 750*1334 (psd: <a href="http://s000.tinyupload.com/?file_id=58977320733006594611">download here</a>)
 ```
 splashImg: {
@@ -59,14 +60,14 @@ splashImg: {
 }
 ```
 
-2. only show the bottom logo image.
+2) only show the bottom logo image.
 ```
 splashImg: {
     bottom: "image url"
 }
 ```
 
-3. show both full screen image and bottom logo image.
+3) show both full screen image and bottom logo image.
 - full image size: 750*1088 (psd: <a href="http://s000.tinyupload.com/?file_id=00997650305977833453">download here</a>)
 ```
 splashImg: {
