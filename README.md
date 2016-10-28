@@ -86,6 +86,6 @@ splash.hide();
 ```
 
 todo list:
-- x adaptive image support
+- adaptive image support
 
 
