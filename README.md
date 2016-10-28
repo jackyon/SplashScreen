@@ -52,8 +52,9 @@ var opts = {
 
 - `splashImg` :
 there are three options:
+
 1) only show the full screen image.
-- full image size: 750*1334 (psd: <a href="http://s000.tinyupload.com/?file_id=58977320733006594611">download here</a>)
+full image size: 750*1334 (psd: <a href="http://s000.tinyupload.com/?file_id=58977320733006594611">download here</a>)
 ```
 splashImg: {
     full: "image url"
@@ -68,7 +69,7 @@ splashImg: {
 ```
 
 3) show both full screen image and bottom logo image.
-- full image size: 750*1088 (psd: <a href="http://s000.tinyupload.com/?file_id=00997650305977833453">download here</a>)
+full image size: 750*1088 (psd: <a href="http://s000.tinyupload.com/?file_id=00997650305977833453">download here</a>)
 ```
 splashImg: {
     full: "image url",
@@ -76,5 +77,6 @@ splashImg: {
 }
 ```
 
-
+todo list:
+x adaptive image support
 
