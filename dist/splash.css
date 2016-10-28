@@ -1,0 +1,146 @@
+#splash-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    transition: all .5s ease-out;
+}
+
+#splash-load-img {
+    display: none;
+    transform: scale(1);
+}
+
+#splash-wrap.hide {
+    display: inherit;
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+#splash-wrap .splash-ad-link,.splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+}
+
+.splash-background {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100% - 105px);
+}
+
+.splash-btm {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 105px;
+    text-align: center;
+    line-height: 105px;
+    background: #fff;
+}
+
+.splash-btm img {
+    height: 70px;
+    vertical-align: middle;
+}
+
+@media screen and (min-height: 1023px) {
+    .splash {
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+#splash-wrap .splash-skip-btn-outter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #e3e3e3;
+    padding: 18px;
+    z-index: 6;
+}
+
+#splash-wrap .splash-skip-btn {
+    background: #292424;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+/* spinner loader */
+.splash-spinner {
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -9px;
+    transition: opacity .3s ease-out;
+}
+
+.splash-spinner.hide {
+    opacity: 0;
+}
+
+.splash-spinner .spinner-icon {
+    border-top-color: #4ecdc4;
+    border-left-color: #4ecdc4;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
+    animation: nprogress-spinner .4s linear infinite;
+}
+
+@keyframes nprogress-spinner{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+
+/* For general small iphone screen */
+@media (max-width : 360px) {
+    .splash-btm img {
+        width: 45%;
+        height: auto;
+    }
+}
+
+/* For general iPad layouts */
+@media (min-width : 768px) and (max-width : 1024px) {
+    .splash-btm img {
+        margin: 0 auto;
+    }
+}
+
+/* ipad portrait */
+@media (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+}
+
+/* ipad landscape */
+@media (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+    #splash-wrap {
+        background: #f4f5f6;
+    }
+
+    .splash-btm img {
+        top: 0;
+    }
+
+    #splash-wrap .splash-ad-link, .splash {
+        max-width: 500px;
+        left: 50%;
+        margin-left: -250px;
+    }
+}
