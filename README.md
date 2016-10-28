@@ -77,6 +77,15 @@ splashImg: {
 }
 ```
 
+hints: the psd file inclues the photoshop guideline, so you can safe to show the text content in all sizes of the mobile devices.
+
+<h2>Methods</h2>
+<h3>hide()</h3>
+```
+splash.hide();
+```
+
 todo list:
 x adaptive image support
+
 
